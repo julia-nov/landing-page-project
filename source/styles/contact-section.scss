@@ -1,0 +1,83 @@
+.contact {
+    margin: 103px 0 112px;
+    .container {
+        @include flex-row;
+        @media (max-width: 991px) {
+           @include flex-column;
+        }
+        h2 {
+            @include h2-font;
+            margin: 0;
+            @media (max-width: 991px) {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+        h4 {
+            @include h4-font;
+        }
+        a {
+            text-decoration: none;
+            color: $gray;
+        }
+    }
+    &-info {
+        flex: 1;
+        &-descr {
+            margin-top: 25px;
+            margin-bottom: 39px;
+            @include descr-font;
+            opacity: 0.5;
+            width: 75%;
+            @media (max-width: 991px) {
+                width: 100%;
+             }
+        }
+        .social-links {
+            margin-top: 50px;
+        }
+    }
+    &-form {
+        flex: 1;
+        background: #FFFFFF;
+        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+        border-radius: 3px;
+        padding: 37px 32px 48px;
+        width: 95%;
+        @media (max-width: 991px) {
+           margin-top: 50px;
+        }
+        .contact-form-descr {
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $gray;
+            font-family: $secondaryFontBold;
+            margin: 20px 0 13px;
+        }
+        input, textarea {
+            border: 1px solid #DADADA;
+            border-radius: 3px;
+            width: 95%;
+            padding: 12px 0 12px 16px;
+            &::placeholder {
+                @include descr-font;
+                opacity: 0.5;
+            }
+        }
+        input {
+            height: 48px;
+        }
+        textarea {
+            height: 112px;
+        }
+        button {
+            @include primary-button;
+            margin-top: 32px;
+            background: #C86DD7;
+            width: 95%;
+
+        }
+
+    }
+}

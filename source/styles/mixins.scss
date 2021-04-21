@@ -1,0 +1,51 @@
+@mixin flex-row {
+    display: flex !important;
+    flex-direction: row;
+  }
+  
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin navbar-point {
+    color: $white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    font-family: $secondaryFontRegular;
+  }
+
+  @mixin primary-button {
+    border-radius: 24px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $white;
+    padding: 12px 47px;
+    font-family: $secondaryFontRegular;
+  }
+
+  @mixin h2-font {
+    font-family: $primaryFontBold;
+    font-size: 56px;
+    line-height: 64px;
+    color: $gray;
+  }
+
+  @mixin h4-font {
+    font-family: $primaryFontBold;
+    font-size: 24px;
+    line-height: 32px;
+    color: $gray;
+  }
+
+  @mixin descr-font {
+    font-family: $secondaryFontRegular;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+  }
+  

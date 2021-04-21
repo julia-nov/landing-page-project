@@ -1,0 +1,95 @@
+.pricing {
+    background-color: $backgroundColor;
+    padding-top: 55px;
+    padding-bottom: 112px;
+    text-align: center;
+    @media (max-width: 375px) {
+        padding: 0 15px;
+    }
+    &.container {
+        padding: 0;
+    }
+    h2 {
+        @include h2-font;
+        @media (max-width: 991px) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    p {
+        @include descr-font;
+        margin: 23px auto 48px;
+        font-family: $secondaryFontBold;
+        width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &-models {
+        @include flex-row;
+        justify-content: center;
+        // flex-wrap: wrap;
+        @media (max-width: 991px) {
+            @include flex-column;
+        }
+        &-item {
+            width: 26%;
+            margin: 0 15px;
+            padding: 53px 0 48px;
+            background-color: $white;
+            box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+            border-radius: 3px;
+            @media (max-width: 991px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            &:hover {
+                background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+                box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
+                border-radius: 3px;
+                h4, h1, li {
+                    color: $white;
+                }
+                button {
+                    background-color: #FFC300;
+                }
+            }
+            h4 {
+                @include h4-font;
+            }
+            h1 {
+                font-size: 72px;
+                line-height: 72px;
+                font-family: $primaryFontBold;
+                color: $gray;
+                @media (max-width: 991px) {
+                    font-size: 56px;
+                    line-height: 64px;
+                }
+            }
+            ul {
+                padding: 0;
+            }
+            li {
+                @include descr-font;
+                opacity: 0.5;
+                list-style-position: inside;
+            }
+            button {
+                @include primary-button;
+                border: 1px solid #C86DD7;
+                background-color: $white;
+                color:  #C86DD7;
+                padding: 12px 54px;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            @media (max-width: 375px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}

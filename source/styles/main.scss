@@ -1,0 +1,27 @@
+@import './fonts.scss';
+@import './constants.scss';
+@import './mixins.scss';
+@import './navbar.scss';
+@import './home-section.scss';
+@import './services-section.scss';
+@import './results-section.scss';
+@import './advantages-section.scss';
+@import './pricing-section.scss';
+@import './feedback-section.scss';
+@import './portfolio-section.scss';
+@import './subscription-section.scss';
+@import './articles-section.scss';
+@import './contact-section.scss';
+@import './footer.scss';
+
+html {
+    @media (max-width: 1199px) {
+        overflow-x: hidden;
+    }
+    @media (max-width: 375px) {
+        overflow-x: hidden;
+    }
+}
+.container {
+    width: 80%;
+}

@@ -1,0 +1,83 @@
+.subscription {
+    padding: 144px 0 112px;
+    @media (max-width: 375px) {
+        padding: 64px 15px 40px;
+    }
+    .container {
+    @include flex-row;
+    padding: 0;
+    @media (max-width: 767px) {
+        @include flex-column;
+    }
+    }
+    &-image {
+        margin-right: 130px;
+        flex: 1;
+        @media (max-width: 767px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: 375px) {
+            margin: 38px auto;
+            padding-right: 30px;
+        }
+        &-background {
+            background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            bottom: 32px;
+            left: 30px;
+        }
+    }
+    &-intro {
+        flex: 1;
+        h2 {
+            @include h2-font;
+            margin-bottom: 23px;
+            @media (max-width: 991px) {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+        p {
+            @include descr-font;
+            &.main {
+                margin: 0 0 6px;
+            }
+            &.secondary {
+                opacity: 0.5;
+            }
+        }
+    }
+    &-form {
+        input {
+            border: 1px solid #DADADA;
+            border-radius: 3px;
+            width: 270px;
+            height: 48px;
+            padding-left: 16px;
+            margin: 38px 30px 16px 0;
+            &::placeholder {
+                @include descr-font;
+                opacity: 0.5;
+            }
+            @media (max-width: 1199px) {
+                width: 230px;
+                margin-right: 10px;
+            }
+            @media (max-width: 991px) {
+                width: 270px;
+            }
+        }
+        button {
+            @include primary-button;
+            background-color: $primaryColor;
+        }
+    }
+}

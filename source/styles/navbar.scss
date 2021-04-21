@@ -1,0 +1,22 @@
+.navbar {
+    position: absolute !important;
+    z-index: 1;
+    background-color:rgba(89, 39, 164, 0.8);
+    width: 100%;
+    &-points {
+        margin: 28px 0;
+        img {
+            margin-left: 35px;
+        }
+        a {
+            @include navbar-point;
+            margin: 0 15px;
+            &:hover {
+                color: $white;
+            }
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+}

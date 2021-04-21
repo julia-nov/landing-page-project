@@ -1,0 +1,67 @@
+.home-section {
+    background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+    padding-right: 15px;
+    padding-left: 15px;
+    &__description {
+        padding: 236px 0 160px;
+        width: 45%;
+        position: relative;
+        z-index: 2;
+        @media (max-width: 991px) {
+            padding-bottom: 100px;
+            width: 60%;
+        }
+        @media (max-width: 767px) {
+            padding-top: 300px;
+            width: 80%;
+        }
+        // @media (max-width: 610px) {
+        //     padding-top: 300px;
+        // }
+        @media (max-width: 375px) {
+            padding-top: 500px;
+        }
+        h1 {
+            font-family: $primaryFontBold;
+            font-size: 72px;
+            line-height: 72px;
+            color: $white;
+            @media (max-width: 991px) {
+                font-size: 50px;
+                line-height: 58px;
+            }
+        }
+        p {
+            font-family: $secondaryFontRegular;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+            margin: 26px 0 34px;
+        }
+        button {
+            @include primary-button;
+            background: #FFC300;
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media (max-width: 1199px) {
+            right: -200px;
+        }
+        @media (max-width: 991px) {
+            height: 170%;
+        }
+        @media (max-width: 767px) {
+            right: -200px;
+            top: -200px;
+        }
+        @media (max-width: 610px) {
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
